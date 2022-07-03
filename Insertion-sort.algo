@@ -1,0 +1,18 @@
+PROCEDURE Insertion_Sort(hand: ARRAY_OF INTEGER, n: INTEGER) 
+    i,card,j:INTEGER
+BEGIN
+    FOR i FROM 0 TO i < n-1 DO
+    
+        card := hand[i]
+        j := i - 1
+
+        WHILE (j >= 0 && hand[j] > card) DO
+            hand[j+1]:= hand[j]; 
+            j:=j-1; 
+        END_WHILE
+
+        hand[j+1]:= card; 
+
+    END_FOR
+    
+END
